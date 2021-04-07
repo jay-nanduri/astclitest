@@ -17,3 +17,4 @@ jobs:
           base_uri: http://demo.ast-cloud.com
           client_id: ${{ secrets.CLIENT_ID }}
           secret: ${{ secrets.SECRET }}
+
