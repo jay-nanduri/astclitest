@@ -17,4 +17,5 @@ jobs:
           base_uri: http://master.astcloud.net
           client_id: ${{ secrets.CLIENT_ID }}
           secret: ${{ secrets.SECRET }}
+          additional_params: --incremental false
 
