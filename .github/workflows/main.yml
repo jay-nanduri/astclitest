@@ -14,9 +14,8 @@ jobs:
       - name: Checkmarx AST CLI Action
         uses: checkmarxDev/ast-github-action@master #Github Action version
         with:
-          project_name: JayGHAction
+          project_name: JayGHAction2
           base_uri: http://demo.ast-cloud.com
           client_id: ${{ secrets.CLIENT_ID }}
           secret: ${{ secrets.SECRET }}
-          additional_params: --incremental false --agent 'Github action'
 
