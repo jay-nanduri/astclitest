@@ -1,7 +1,5 @@
 <?php
 
-// Updated to trigger CxFlow 355
-
 
 // Updated to trigger CxFlow 385
 // First a SQL Injection attack V9
