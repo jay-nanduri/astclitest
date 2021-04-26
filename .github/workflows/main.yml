@@ -1,9 +1,10 @@
 name: Checkmarx AST Scan
 on:
-  push:
+  pull_request:
+    types: [ opened, reopened, synchronize ] #Types specify which pull request events will trigger the workflow. For more events refer Github Actions documentation.
     branches:
-      - main
       - master
+      - main
 
 jobs:
   build:
@@ -14,7 +15,7 @@ jobs:
       - name: Checkmarx AST CLI Action
         uses: checkmarxDev/ast-github-action@master #Github Action version
         with:
-          project_name: JayGHAction2
+          project_name: JayGHActionPullRequest
           base_uri: https://master.cxast.com
           client_id: ${{ secrets.CLIENT_ID }}
           secret: ${{ secrets.SECRET }}
