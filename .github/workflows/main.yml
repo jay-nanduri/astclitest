@@ -15,7 +15,7 @@ jobs:
         uses: checkmarxDev/ast-github-action@master #Github Action version
         with:
           project_name: JayGHAction2
-          base_uri: https://master-cxiam.cxast.com
+          base_uri: https://master.cxast.com
           client_id: ${{ secrets.CLIENT_ID }}
           secret: ${{ secrets.SECRET }}
 
